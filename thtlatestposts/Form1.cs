@@ -1,4 +1,4 @@
-﻿using HtmlAgilityPack;
+using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -75,7 +75,7 @@ namespace thtlatestposts
                                             Invoke((MethodInvoker)delegate
                                             {
                                                 new Notify(node.SelectNodes(".//a")[0].InnerText, node.SelectNodes(".//div")[1].SelectNodes(".//span")[0].InnerText.Replace("&quot;", @""""),
-                                                    node.SelectNodes(".//a")[0].Attributes["href"].Value).Show();
+                                                    node.SelectNodes(".//a")[0].Attributes["href"].Value, kategori).Show();
                                                 if (checkBox1.Checked)
                                                 {
                                                     SoundPlayer sp = new SoundPlayer(textBox1.Text);
