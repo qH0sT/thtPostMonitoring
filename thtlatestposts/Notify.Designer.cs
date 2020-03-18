@@ -1,4 +1,4 @@
-﻿namespace thtlatestposts
+namespace thtlatestposts
 {
     partial class Notify
     {
@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +62,7 @@
             // 
             // linkLabel1
             // 
-            this.linkLabel1.Location = new System.Drawing.Point(12, 61);
+            this.linkLabel1.Location = new System.Drawing.Point(12, 92);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(347, 42);
             this.linkLabel1.TabIndex = 3;
@@ -69,12 +70,22 @@
             this.linkLabel1.Text = "linkLabel1";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "label2";
+            // 
             // Notify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(371, 112);
+            this.ClientSize = new System.Drawing.Size(371, 153);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -96,5 +107,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label2;
     }
 }
