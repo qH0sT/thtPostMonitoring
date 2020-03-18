@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
@@ -7,11 +7,12 @@ namespace thtlatestposts
 {
     public partial class Notify : Form
     {
-        public Notify(string baslik, string konuSahibi, string uri)
+        public Notify(string baslik, string konuSahibi, string uri, string cat)
         {
             InitializeComponent();
             label1.Text = baslik;
             label3.Text = konuSahibi;
+            label2.Text = cat;
             linkLabel1.Text = uri;
         }
         protected override void OnLoad(EventArgs e)
